@@ -1,8 +1,6 @@
 streamlit
 pandas
-psycopg2-binary
+plotly
 scikit-learn
-plotlystreamlit
-pandas
-sqlalchemy
 psycopg2-binary
+sqlalchemy
