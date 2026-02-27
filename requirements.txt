@@ -1,5 +1,13 @@
 streamlit
 pandas
+sqlalchemy
+psycopg2-binary
+scikit-learn
+plotly
+matplotlib
+seaborn
+numpystreamlit
+pandas
 plotly
 scikit-learn
 psycopg2-binary
