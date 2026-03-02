@@ -1,10 +1,14 @@
+
+
 import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sqlalchemy import create_engineDATABASE_URL = 
-st.secrets["DATABASE_URL"]
+from sqlalchemy import create_engine
+
+
+DATABASE_URL = st.secrets["DATABASE_URL"]
 
 engine = create_engine(DATABASE_URL)# Load Data
 query = """
