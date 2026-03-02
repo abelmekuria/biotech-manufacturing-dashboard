@@ -1,21 +1,9 @@
-import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
+import os
 from sqlalchemy import create_engine
-import numpy as np
-from sklearn.linear_model import LinearRegression
 
-st.set_page_config(page_title="Executive Biotech Manufacturing Dashboard", 
-layout="wide")
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-st.title("🧬 Executive Biotech Manufacturing Dashboard")
-
-# Database Connection
-engine = create_engine(
-    
-"postgresql://postgres:newpassword123@localhost:5432/biotech_manufacturing"
-)
-
+engine = create_engine(DATABASE_URL)
 # Load Data
 query = """
 SELECT batch_id, status, actual_yield
