@@ -31,3 +31,4 @@ GitHub
 Architecture
 
 Local Dev → GitHub → Streamlit Cloud → Neon DB
+https://biotech-manufacturing-dashboard-rlfnt8ixrs7za5qc8iwec9.streamlit.app/
