@@ -1,12 +1,13 @@
 
 
+
 import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sqlalchemy import create_engine
-
+from sklearn.linear_model import LinearRegression
 
 DATABASE_URL = st.secrets["DATABASE_URL"]
 
