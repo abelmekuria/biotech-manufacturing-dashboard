@@ -1,10 +1,10 @@
-import os
+
+import streamlit as st
 from sqlalchemy import create_engine
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = st.secrets["DATABASE_URL"]
 
-engine = create_engine(DATABASE_URL)
-# Load Data
+engine = create_engine(DATABASE_URL)# Load Data
 query = """
 SELECT batch_id, status, actual_yield
 FROM batches;
